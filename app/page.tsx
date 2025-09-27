@@ -63,13 +63,16 @@ export default function Portfolio() {
 
   // Function to download the resume
   const downloadResume = () => {
-    // Create a link to the resume file in the public folder
-    const link = document.createElement("a")
-    link.href = "/Siddharth_Hiraou_Resume.pdf" // This path is relative to the public folder
-    link.download = "Siddharth_Hiraou_Resume.pdf"
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
+    // Option 1: Link to external resume (replace with your actual URL)
+    window.open("https://your-resume-url.com/resume.pdf", "_blank")
+
+    // Option 2: If you have the PDF in public folder, keep this:
+    // const link = document.createElement("a")
+    // link.href = "/Siddharth_Hiraou_Resume.pdf"
+    // link.download = "Siddharth_Hiraou_Resume.pdf"
+    // document.body.appendChild(link)
+    // link.click()
+    // document.body.removeChild(link)
   }
 
   return (
